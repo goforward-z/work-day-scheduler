@@ -28,127 +28,67 @@
       <p class="lead">A simple calendar app for scheduling your work day</p>
       <p id="currentDay" class="lead"></p>
     </header>
-    <div class="container">
-      <!-- Timeblocks go here -->
-      <div class="container mt-5 mb-5">
 
-        <!-- Timeblocks 9AM to 5PM -->
-        <div class="row mt-1">
-          <div class="col-1 border-top border-bottom text-right pt-1 dayplannerHour" value="9">
-            9AM
-          </div>
-          <div class="col-10 border px-0"><textarea></textarea>
-          </div>
-          <div class="col-1 pl-0 pr-1">
-            <button class="btn btn-block btn-info rounded-right pb-4 text-center">
-              <i class="fas fa-save pt-3"></i>
-            </button>
-          </div>
-        </div>
-  
-        <div class="row mt-1">
-          <div class="col-1 border-top border-bottom text-right pt-1 dayplannerHour" value="10">
-            10AM
-          </div>
-          <div class="col-10 border px-0"><textarea></textarea>
-          </div>
-          <div class="col-1 pl-0 pr-1">
-            <button class="btn btn-block btn-info rounded-right pb-4 text-center">
-              <i class="fas fa-save pt-3"></i>
-            </button>
-          </div>
-        </div>
-  
-        <div class="row mt-1">
-          <div class="col-1 border-top border-bottom text-right pt-1 dayplannerHour" value="11">
-            11AM
-          </div>
-          <div class="col-10 border px-0"><textarea></textarea>
-          </div>
-          <div class="col-1 pl-0 pr-1">
-            <button class="btn btn-block btn-info rounded-right pb-4 text-center">
-              <i class="fas fa-save pt-3"></i>
-            </button>
-          </div>
-        </div>
-  
-        <div class="row mt-1">
-          <div class="col-1 border-top border-bottom text-right pt-1 dayplannerHour" value="12">
-            12PM
-          </div>
-          <div class="col-10 border px-0"><textarea></textarea>
-          </div>
-          <div class="col-1 pl-0 pr-1">
-            <button class="btn btn-block btn-info rounded-right pb-4 text-center">
-              <i class="fas fa-save pt-3"></i>
-            </button>
-          </div>
-        </div>
-  
-        <div class="row mt-1">
-          <div class="col-1 border-top border-bottom text-right pt-1 dayplannerHour" value="1">
-            1PM
-          </div>
-          <div class="col-10 border px-0"><textarea></textarea></div>
-          <div class="col-1 pl-0 pr-1">
-            <button class="btn btn-block btn-info rounded-right pb-4 text-center">
-              <i class="fas fa-save pt-3"></i>
-            </button>
-          </div>
-        </div>
-  
-        <div class="row mt-1">
-          <div class="col-1 border-top border-bottom text-right pt-1 dayplannerHour" value="2">
-            2PM
-          </div>
-          <div class="col-10 border px-0"><textarea></textarea></div>
-          <div class="col-1 pl-0 pr-1">
-            <button class="btn btn-block btn-info rounded-right pb-4 text-center">
-              <i class="fas fa-save pt-3"></i>
-            </button>
-          </div>
-        </div>
-  
-        <div class="row mt-1">
-          <div class="col-1 border-top border-bottom text-right pt-1 dayplannerHour" value="3">
-            3PM
-          </div>
-          <div class="col-10 border px-0"><textarea></textarea>
-          </div>
-          <div class="col-1 pl-0 pr-1">
-            <button class="btn btn-block btn-info rounded-right pb-4 text-center">
-              <i class="fas fa-save pt-3"></i>
-            </button>
-          </div>
-        </div>   
-  
-        <div class="row mt-1">
-          <div class="col-1 border-top border-bottom text-right pt-1 dayplannerHour" value="4">
-            4PM
-          </div>
-          <div class="col-10 border px-0"><textarea></textarea>
-          </div>
-          <div class="col-1 pl-0 pr-1">
-            <button class="btn btn-block btn-info rounded-right pb-4 text-center">
-              <i class="fas fa-save pt-3"></i>
-            </button>
-          </div>
-        </div> 
-  
-        <div class="row mt-1">
-          <div class="col-1 border-top border-bottom text-right pt-1 dayplannerHour" value="5">
-            5PM
-          </div>
-          <div class="col-10 border px-0"><textarea></textarea>
-          </div>
-          <div class="col-1 pl-0 pr-1">
-            <button class="btn btn-block btn-info rounded-right pb-4 text-center">
-              <i class="fas fa-save pt-3"></i>
-            </button>
-          </div>
-        </div> 
+    <!-- Timeblocks 9AM to 5PM -->
+    <div class="container">
+      <div class="row time-block" id="9">
+        <div class="col-1 hour pt-2">9AM</div>
+        <textarea class="col-10 plan"></textarea>
+        <button class="col-1 saveBtn"><i class="fas fa-save"></i></button>
+      </div>
+
+      <div class="row time-block" id="10">
+        <div class="col-1 hour pt-2">10AM</div>
+        <textarea class="col-10 plan"></textarea>
+        <button class="col-1 saveBtn"><i class="fas fa-save"></i></button>
+      </div>
+
+      <div class="row time-block" id="11">
+        <div class="col-1 hour pt-2">11AM</div>
+        <textarea class="col-10 plan"></textarea>
+        <button class="col-1 saveBtn"><i class="fas fa-save"></i></button>
+      </div>
+
+      <div class="row time-block" id="12">
+        <div class="col-1 hour pt-2" value="12PM">12PM</div>
+        <textarea class="col-10 plan"></textarea>
+        <button class="col-1 saveBtn"><i class="fas fa-save"></i></button>
+      </div>
+
+      <div class="row time-block" id="13">
+        <div class="col-1 hour pt-2">1PM</div>
+        <textarea class="col-10 plan"></textarea>
+        <button class="col-1 saveBtn"><i class="fas fa-save"></i></button>
+      </div>
+
+      <div class="row time-block" id="14">
+        <div class="col-1 hour pt-2">2PM</div>
+        <textarea class="col-10 plan"></textarea>
+        <button class="col-1 saveBtn"><i class="fas fa-save"></i></button>
+      </div>
+
+      <div class="row time-block" id="15">
+        <div class="col-1 hour pt-2">3PM</div>
+        <textarea class="col-10 plan"></textarea>
+        <button class="col-1 saveBtn"><i class="fas fa-save"></i></button>
+      </div>
+
+      <div class="row time-block" id="16">
+        <div class="col-1 hour pt-2">4PM</div>
+        <textarea class="col-10 plan"></textarea>
+        <button class="col-1 saveBtn"><i class="fas fa-save"></i></button>
+      </div>
+
+      <div class="row time-block" id="17">
+        <div class="col-1 hour pt-2">5PM</div>
+        <textarea class="col-10 plan"></textarea>
+        <button class="col-1 saveBtn"><i class="fas fa-save"></i></button>
+      </div>
+
     </div>
 
+
+    <!-- js scripts, jquery, moment.js, bootstrap js -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
