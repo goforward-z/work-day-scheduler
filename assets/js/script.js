@@ -14,6 +14,8 @@
 //WHEN I refresh the page
 //THEN the saved events persist
 
+var saveBtn = $(".saveBtn");
+
 
 // current day is displayed at the top of the calendar
 $("#currentDay").text(moment().format('dddd MMMM Do YYYY'));
@@ -36,5 +38,16 @@ function timeBlockColor(){
 
     })
 };
+
+//when I click the save button for the time block
+saveBtn.on("click", function(){
+    var time = $(this).siblings(".hour").text();
+    var plan = $(this).siblings(".plan").val();
+
+    console.log(this);
+
+    //the text for that event is saved in local storage
+    localStorage.setItem(time,plan);
+});
 
 timeBlockColor();
