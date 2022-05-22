@@ -22,15 +22,15 @@ $("#currentDay").text(moment().format('dddd MMMM Do YYYY'));
 
 // each time block is color-coded to indicate whether it is in the past, present, or future
 function timeBlockColor(){
-    var hour = moment().hour();
+    var NowHour = moment().hour();
 
     $(".time-block").each(function(){
-        var currhour = parseInt($(this).attr("id"));
+        var allHour = parseInt($(this).attr("id"));
         console.log(this);
 
-        if(currhour > hour){
+        if(allHour > NowHour){
             $(this).addClass("future");
-        } else if(currhour === hour){
+        } else if(allHour === NowHour){
             $(this).addClass("present");
         } else {
             $(this).addClass("past");
@@ -50,4 +50,20 @@ saveBtn.on("click", function(){
     localStorage.setItem(time,plan);
 });
 
+//when user refresh the page ,saved events persist
+function usePlanner(){
+    $(".hour").each(function(){
+        var currhour = $(this).text();
+        var currPlan = localStorage.getItem(currhour);
+        console.log(this);
+        console.log(currhour);
+
+        if(currPlan !== null){
+           $(this).siblings(".plan").val(currPlan);
+        }
+    });
+    
+};
+
 timeBlockColor();
+usePlanner();
