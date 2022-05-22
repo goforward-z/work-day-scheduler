@@ -16,5 +16,8 @@ This is a simple work day calendar application that allows a user to save events
 ## Websites
 * Deployed: https://goforward-z.github.io/work-day-scheduler/
 * GitHub Repo : https://github.com/goforward-z/work-day-scheduler.git
-* 
+
+## Screenshot
+![demo](https://user-images.githubusercontent.com/102371765/169715508-5ce17188-9ca6-4b31-b7fb-12b4d4bc059b.png)
+
 
